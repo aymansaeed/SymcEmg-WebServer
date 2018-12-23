@@ -1,0 +1,85 @@
+/* CSS Document */
+.container{
+	width:100%;
+	padding:0px;
+	}
+	
+.row_1{
+	background:#3B5998;
+	border-bottom:1px solid navy;
+	}	
+a.logo{
+	text-decoration:none;
+	color:white;
+	font-weight:900;
+	padding-left:100px;
+	font-size:3em;
+	}
+.login_box{
+	}	
+table{
+	width:100%;
+	}
+.login_txt{
+	color:white;
+	}	
+a.login_txt2{
+	color:white;
+	}	
+.login_txtbox{
+	width:100%;
+	font-size:16px;
+	padding-left:10px;
+	}	
+.login_box2{
+	display:none;
+	}	
+	
+.signup_box{
+	padding-right:100px;
+	}	
+.signup_txtbox{
+	width:100%;
+	font-size:18px;
+	padding:3px 10px 3px 10px;
+	}	
+.birthday_dropdown{
+	width:20%;
+	font-size:18px;
+	padding:3px 10px 3px 10px;
+	}	
+.signup_bnt{
+	width:100%;
+	font-size:16px;
+	}	
+@media screen and (max-width: 900px){
+body{
+	font-family:Verdana;
+	background:white;
+	}
+a.logo{
+	text-decoration:none;
+	color:white;
+	font-weight:900;
+	padding-left:0px;
+	font-size:3em;
+	}
+
+.row_2{
+	display:none;
+	}
+.login_box{
+	display:none;
+	}
+
+.login_box2{
+	display:inherit;
+	}	
+
+.login_btn{
+	padding:5px 50px 5px 50px;
+}	
+.signup_btn2{
+	width:100%;
+	}
+

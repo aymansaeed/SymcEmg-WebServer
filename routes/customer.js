@@ -50,14 +50,14 @@ module.exports = {
                             if (err) {
                                 return res.status(500).send(err);
                             }
-                            res.redirect('/');
+                            res.redirect('/customersdb');
                         });
                     });
                 } else {
                     message = "Invalid File format. Only 'gif', 'jpeg' and 'png' images are allowed.";
                     res.render('add-customer.ejs', {
                         message,
-                        title: "Welcome to Socka | Add a new customer"
+                        title: "Welcome to CustomersDB | Add a new customer"
                     });
                 }
             }
@@ -89,7 +89,7 @@ module.exports = {
             if (err) {
                 return res.status(500).send(err);
             }
-            res.redirect('/');
+            res.redirect('/customersdb');
         });
     },
     deleteCustomer: (req, res) => {
@@ -112,7 +112,7 @@ module.exports = {
                     if (err) {
                         return res.status(500).send(err);
                     }
-                    res.redirect('/');
+                    res.redirect('/customersdb');
                 });
             });
         });

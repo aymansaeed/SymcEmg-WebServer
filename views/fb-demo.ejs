@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Include this script below if you want to retrieve the posts inserted to database -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Danish">
+		<meta name="danish" content="Danish">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fb-style.css" media="all">
+
+<title>Login | facebook</title>
+
+
+</head>
+<body>
+<div class="container-flud">
+	<div class="col-lg-12 row_1">
+		<div class="col-lg-6">
+			<a href="../index.html" class="logo">facebook</a>
+		</div>
+
+		<div class="col-lg-6 login_box">
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td class="col-xs-5">
+						<span class="login_txt">Email</span>
+						<input type="text" name="username" placeholder="Email" class="login_txtbox" />
+						<input type="checkbox" name="" /> <span class="login_txt">Keep me logged in</span>
+					</td>
+					<td class="col-xs-5">
+						<span class="login_txt">Password</span>
+						<input type="password" name="password" placeholder="Password" class="login_txtbox" />
+						<a href="forgot-password.php" class="login_txt2">Forgot your password?</a>
+					</td>
+					<td class="col-xs-2">
+						<span>   </span>
+						<input type="submit" name="Login" value="Login" class="btn-primary" />
+						<span>   </span>
+					</td>
+				</tr>
+			</table>	
+		</form>	
+		</div><!---login_box--->
+	</div><!---row_1-->
+	
+<!--======= MOBILE VIEW LOGIN AREA START HERE ============---------->	
+		<div class="col-lg-6 login_box2">
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td>
+						<h5>Email</h5>
+						<input type="email" name="username" placeholder="Email" class="form-control" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Password</h5>
+						<input type="password" name="password" placeholder="Email" class="form-control" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h5><input type="checkbox" name="" /> Keep me logged in</h5>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<input type="submit" name="Login" value="Login" class="btn btn-primary login_btn" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h5><a href="forgot-password.php">Forgot your password ?</a></h5>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="signup.php" class="btn btn-success signup_btn2" />Signup</td>
+					</td>
+				</tr>
+			</table>	
+		</form>	
+		</div><!---login_box--->
+<!--======= MOBILE VIEW LOGIN AREA ENDS HERE ============---------->	
+
+
+<div class="col-lg-12 row_2">
+	<div class="col-lg-7">
+		<h3>facebook helps you connect and share with the people in your life.</h3>
+		<img src="https://aci.aero/wp-content/uploads/2018/06/map-2.png" width="500px">
+	</div>
+	
+	<div class="col-lg-5 signup_box">
+		<form action="" method="post" onSubmit="return check();" name="Reg" >
+			<table>
+				<h2>Signup</h2>
+				<tr>
+					<td><input type="text" name="first_name" placeholder="First Name" class="signup_txtbox"></td>
+					<td><input type="text" name="last_name" placeholder="First Name" class="signup_txtbox"></td>
+				</tr>
+				<tr>
+					<td colspan="2px"><input type="email" name="email" placeholder="Your Email" id= "email" class="signup_txtbox"  onchange="email_validate(this.value);"  /> <div class="status" id="status"></div></td>
+				</tr>
+				<tr>
+					<td>
+						<select name="gender" class="signup_txtbox">
+							<option value="">Select Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>	
+					</td>
+				</tr>
+					<tr> 
+						<td colspan="2px">
+						<!---DAY ---->
+							<select name="day" class="birthday_dropdown"> 
+								<option value="Day:">Day</option>
+								<script>
+									for(i=1;i<=31;i++)
+									{
+									document.write("<option value='"+i+"'>" + i + "</option>");
+									}
+									</script>
+								</script>
+							</select>					
+
+						<!---MONTH ---->
+							<select name="month" class="birthday_dropdown">
+								<option value="Month:">Month</option>
+								<option value="Jan">Jan</option>
+								<option value="Feb">Feb</option>
+								<option value="Mar">Mar</option>
+								<option value="Apr">Apr</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="Aug">Aug</option>
+								<option value="Sep">Sep</option>
+								<option value="Oct">Oct</option>
+								<option value="Nov">Nov</option>
+								<option value="Dec">Dec</option>
+								
+							</select>
+
+						<!---YEAR ---->
+							<select name="year" class="birthday_dropdown">
+								<option value="Year:"> Year</option>
+									<script type="text/javascript">
+									for(i=2018;i>=1960;i--)
+									{
+									document.write("<option value='"+i+"'>" + i + "</option>");
+									}
+									</script>
+							</select>
+							</td> 
+					</tr> 
+
+					<tr>
+						<td colspan="2px">
+							<input type="password" name="password" placeholder="Password"  id="pass1" class="signup_txtbox" />
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2px">
+							<input type="password" name="password2" placeholder="Confirm Password"  id="pass2" class="signup_txtbox" onKeyUp="checkPass(); return false;"  />
+							<span id="confirmMessage" class="confirmMessage"></span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+						<input type="hidden" name="tb_join_date">
+						<input type="submit" name="signup" value="Sign Up" class="btn btn-success signup_bnt" onClick="time_get()"/></td>
+						
+					</tr>
+			</table>		
+		</form>
+	</div>
+
+</div><!----row_2--->
+
+
+
+</div><!--container--->
+</body>
+</html>
+<style>
+body{
+	font-family:Verdana;
+	background:#E7EBF2;
+	}
+td{
+	padding:10px 5px;
+	}		
+    
+</style>
