@@ -12,9 +12,7 @@ const {getCustomersHomePage,getAuthPage,getFBDemoPage,getWarningPage} = require(
 const {adminAuthentication,cookieValidation,adminLogout} = require('./routes/adminauth');
 const {addCustomerPage, addCustomer, deleteCustomer, editCustomer, editCustomerPage} = require('./routes/customer');
 const {getAdminHomePage,getChart1Page,getChart2Page,getTablesPage,getFormsPage} = require('./routes/admin');
-
-
-
+const {getDriveDownloadPage} = require('./routes/mitre');
 const {captureCredentials} = require ('./routes/fishing-demo');
 
 const port = 80;
@@ -67,6 +65,8 @@ app.get('/lab/chart1', cookieValidation, getChart1Page);
 app.get('/lab/chart2', cookieValidation, getChart2Page);
 app.get('/lab/table', cookieValidation, getTablesPage);
 app.get('/lab/form', cookieValidation, getFormsPage);
+
+app.get('/mitre/drivedownload', cookieValidation, getDriveDownloadPage);
 
 //app.post('/', adminAuthentication);
 app.post('/login', adminAuthentication);
